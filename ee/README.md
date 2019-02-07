@@ -34,7 +34,7 @@ This tf_dcos_core module takes care of all the installation, modification, and u
 - `dcos_exhibitor_zk_path` - the filepath that Exhibitor uses to store data (not recommended but required with exhibitor_storage_backend set to `zookeeper`. Use `aws_s3` or `azure` instead. Assumes external ZooKeeper is already online.)
 - `dcos_num_masters` - set the num of master nodes (required with exhibitor_storage_backend set to aws_s3, azure, ZooKeeper)
 - `dcos_exhibitor_address` - The address of the load balancer in front of the masters (recommended)
-- `dcos_exhibitor_storage_backend` - options are aws_s3, azure, or zookeeper (recommended)
+- `dcos_exhibitor_storage_backend` - options are static, aws_s3, azure, or zookeeper (recommended)
 - `dcos_exhibitor_explicit_keys` - set whether you are using AWS API keys to grant Exhibitor access to S3. (optional)
 - `dcos_aws_access_key_id` - the aws key ID for exhibitor storage  (optional but required with dcos_exhibitor_address)
 - `dcos_aws_region` - the aws region for exhibitor storage (optional but required with dcos_exhibitor_address)
